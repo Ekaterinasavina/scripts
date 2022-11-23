@@ -6,50 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script src="js/modernizr.custom.17475.js"></script>
 </head>
 <body>
     <ul id="carousel" class="elastislide-list">
         <li><a href="#"><img src="img/1.jpg" alt="image01" /></a></li>
         <li><a href="#"><img src="img/2.jpg" alt="image02" /></a></li>
         <li><a href="#"><img src="img/3.jpg" alt="image03" /></a></li>
-        <li><a href="#"><img src="img/4.jpg" alt="image03" /></a></li>
-        <li><a href="#"><img src="img/5.jpg" alt="image03" /></a></li>
-        <li><a href="#"><img src="img/6.jpg" alt="image03" /></a></li>
-        <li><a href="#"><img src="img/7.jpg" alt="image03" /></a></li>
-        <li><a href="#"><img src="img/8.jpg" alt="image03" /></a></li>
+        <li><a href="#"><img src="img/4.jpg" alt="image04" /></a></li>
+        <li><a href="#"><img src="img/5.jpg" alt="image05" /></a></li>
+        <li><a href="#"><img src="img/6.jpg" alt="image06" /></a></li>
+        <li><a href="#"><img src="img/7.jpg" alt="image07" /></a></li>
+        <li><a href="#"><img src="img/8.jpg" alt="image08" /></a></li>
         <!-- ... -->
     </ul>
-    <script>
-    $('#carousel').elastislide();
-    $.Elastislide.defaults = {
-        // orientation 'horizontal' || 'vertical'
-        orientation : 'horizontal',
-    
-        // sliding speed
-        speed : 500,
-    
-        // sliding easing
-        easing : 'ease-in-out',
-    
-        // the minimum number of items to show. 
-        // when we resize the window, this will make sure minItems are always shown 
-        // (unless of course minItems is higher than the total number of elements)
-        minItems : 3,
-    
-        // index of the current item (left most item of the carousel)
-        start : 0,
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquerypp.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    <script type="text/javascript">
         
-        // click item callback
-        onClick : function( el, position, evt ) { return false; },
-        onReady : function() { return false; },
-        onBeforeSlide : function() { return false; },
-        onAfterSlide : function() { return false; }
-    };
-    var carousel = $('#carousel').elastislide();
-
-    $('#carousel').append("<li><a href="#"><img src="images/10.jpg" alt="image03" /></a></li>");
-    carousel.add();
-
+        $( '#carousel' ).elastislide();
+        
     </script>
     
 </body>
